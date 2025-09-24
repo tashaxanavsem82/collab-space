@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Collab Space app is running!');
+    console.log('Collab Space application has started successfully!');
 });
