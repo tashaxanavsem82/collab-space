@@ -16,4 +16,10 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+server.listen(PORT, (err) => {
+    if (err) {
+        console.error(`Error starting server: ${err}`);
+        return;
+    }
+    console.log(`Server is running on port ${PORT}`);
+});
